@@ -23,9 +23,8 @@ steps:
   displayName: 'Running XCTest/XCUITest'
   inputs:
     actions: 'test'
-    scheme: '$(scheme)'
+    scheme: 'swift-helloworld'
     sdk: 'iphonesimulator'
-    configuration: 'swift-helloworld'
     xcodeVersion: '10' # Options: 8, 9, default, specifyPath
     packageApp: false
     xcWorkspacePath: 'swift-helloworld.xcodeproj'
