@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		D85433C6222127FC001BA7D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D85433C4222127FC001BA7D6 /* LaunchScreen.storyboard */; };
 		D85433D1222127FC001BA7D6 /* swift_helloworldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85433D0222127FC001BA7D6 /* swift_helloworldTests.swift */; };
 		D85433DC222127FC001BA7D6 /* swift_helloworldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85433DB222127FC001BA7D6 /* swift_helloworldUITests.swift */; };
+		D85433EB22212872001BA7D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D85433C4222127FC001BA7D6 /* LaunchScreen.storyboard */; };
+		D85433ED22212898001BA7D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D85433BF222127FB001BA7D6 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -205,7 +207,7 @@
 				};
 			};
 			buildConfigurationList = D85433B3222127FB001BA7D6 /* Build configuration list for PBXProject "swift-helloworld" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -239,6 +241,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D85433EB22212872001BA7D6 /* LaunchScreen.storyboard in Resources */,
+				D85433ED22212898001BA7D6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
