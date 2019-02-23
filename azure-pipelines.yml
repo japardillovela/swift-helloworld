@@ -12,9 +12,25 @@ pool:
 steps:
 - task: Xcode@5
   inputs:
-    actions: 'build test'
+    displayName: 'Build'
+    actions: 'build'
     scheme: 'swift-helloworld'
     sdk: 'iphoneos'
     configuration: 'Debug'
     xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
     xcodeVersion: '10' # Options: 8, 9, 10, default, specifyPath
+- task: Xcode@5
+  displayName: 'Running XCTest/XCUITest'
+  inputs:
+    actions: 'test'
+    scheme: '$(scheme)'
+    sdk: 'iphonesimulator'
+    configuration: 'swift-helloworld'
+    xcodeVersion: '10' # Options: 8, 9, default, specifyPath
+    packageApp: false
+    xcWorkspacePath: 'swift-helloworld.xcodeproj'
+    destinationSimulators: 'iPhone 7'
+    destinationTypeOption: 'simulators'
+    destinationPlatformOption: 'iOS'
+    useXcpretty: true
+    publishJUnitResults: 'build/reports/<span class="skimlinks-unlinked">junit.xml</span>'
